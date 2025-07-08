@@ -8,11 +8,11 @@ use Illuminate\Database\Connection;
 class DatabaseInspector
 {
     /** @var AbstractSchemaManager */
-    protected \$schemaManager;
+    protected $schemaManager;
 
-    public function __construct(Connection \$connection)
+    public function __construct(Connection $connection)
     {
-        \$this->schemaManager = \$connection->getDoctrineSchemaManager();
+        $this->schemaManager = $connection->getDoctrineSchemaManager();
     }
 
     /**
@@ -20,14 +20,14 @@ class DatabaseInspector
      */
     public function getTables(): array
     {
-        return \$this->schemaManager->listTableNames();
+        return $this->schemaManager->listTableNames();
     }
 
     /**
      * Get column definitions for a given table
      */
-    public function getTableColumns(string \$table): array
+    public function getTableColumns(string $table): array
     {
-        return \$this->schemaManager->listTableColumns(\$table);
+        return $this->schemaManager->listTableColumns($table);
     }
 }
