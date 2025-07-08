@@ -9,7 +9,7 @@ A Laravel package to inspect an existing database schema and generate correspond
 1. Require via Composer:
 
    ```bash
-   composer require your-vendor/laravel-db-introspector
+   composer require dotted-ai/laravel-db-introspector
    ```
 
 2. Publish the stub template (optional):

@@ -1,5 +1,5 @@
 {
-    "name": "your-vendor/laravel-db-introspector",
+    "name": "dotted-ai/laravel-db-introspector",
     "description": "Generate migrations from existing database schema",
     "type": "library",
     "autoload": {
